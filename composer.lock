@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9dc5ce49d0a346718fa2aad58ca625e9",
+    "content-hash": "6db71c5af4f1733579a29c5e41d489d7",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -370,6 +370,41 @@
                 "issues": "https://github.com/diva-dev/diva-staging-plugin/issues"
             },
             "time": "2021-08-18T11:59:02+00:00"
+        },
+        {
+            "name": "diva-dev/formidable-export-view",
+            "version": "v1.05",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:diva-dev/formidable-export-view.git",
+                "reference": "2cfceaecf117397e9849128a491f95c68e2b7113"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/diva-dev/formidable-export-view/zipball/2cfceaecf117397e9849128a491f95c68e2b7113",
+                "reference": "2cfceaecf117397e9849128a491f95c68e2b7113",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Original Plugin Author's Name",
+                    "homepage": "https://originalpluginurl.com"
+                }
+            ],
+            "homepage": "https://github.com/diva-dev/formidable-export-view",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/diva-dev/formidable-export-view/tree/v1.05",
+                "issues": "https://github.com/diva-dev/formidable-export-view/issues"
+            },
+            "time": "2021-12-15T10:36:00+00:00"
         },
         {
             "name": "diva-dev/formidable-mailchimp",
