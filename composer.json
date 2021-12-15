@@ -23,24 +23,30 @@
         },
         {
             "type": "vcs",
-            "url": "git@github.com:diva-dev/gravity-forms.git"
-        },
-        {
-            "type": "vcs",
             "url": "git@github.com:diva-dev/diva-staging-plugin.git"
         },
         {
             "type": "vcs",
-            "url": "git@github.com:diva-dev/gravityformssurvey.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:diva-dev/modern-events-calendar.git"
+            "url": "git@github.com:diva-dev/diva-skip-links.git"
         }
     ],
     "require": {
         "aws/aws-sdk-php":"*",
-        "advanced-custom-fields/advanced-custom-fields-pro": "*"
+        "advanced-custom-fields/advanced-custom-fields-pro": "*",
+        "wpackagist-plugin/autodescription": "^4.2",
+        "wpackagist-plugin/classic-editor": "*",
+        "wpackagist-plugin/custom-post-type-ui": "*",
+        "wpackagist-plugin/easy-wp-smtp": "*",
+        "wpackagist-plugin/edit-author-slug": "*",
+        "wpackagist-plugin/formidable": "*",
+        "wpackagist-plugin/popup-maker": "*",
+        "wpackagist-plugin/query-monitor": "*",
+        "wpackagist-plugin/redirection": "*",
+        "wpackagist-plugin/redis-cache": "*",
+        "wpackagist-plugin/slim-maintenance-mode": "*",
+        "wpackagist-plugin/wp-extra-file-types": "*",
+        "diva-dev/diva-staging-plugin": "*",
+        "diva-dev/diva-skip-links": "*"
     },
     "autoload": {
         "psr-0": {
