@@ -40,25 +40,7 @@
     ],
     "require": {
         "aws/aws-sdk-php":"*",
-        "advanced-custom-fields/advanced-custom-fields-pro": "*",
-        "wp-media/wp-rocket": "^v3.9",
-        "wpackagist-plugin/adminimize": "^1.2",
-        "wpackagist-plugin/acf-gravityforms-add-on": "^1.2",
-        "wpackagist-plugin/all-in-one-wp-security-and-firewall": "*",
-        "wpackagist-plugin/breadcrumb-navxt": "*",
-        "wpackagist-plugin/classic-editor": "*",
-        "wpackagist-plugin/custom-post-type-permalinks": "*",
-        "wpackagist-plugin/gravity-forms-zero-spam": "*",
-        "wpackagist-plugin/post-expirator": "*",
-        "wpackagist-plugin/query-monitor": "*",
-        "wpackagist-plugin/redirection": "*",
-        "wpackagist-plugin/user-role-editor": "*",
-        "wpackagist-plugin/wordpress-seo": "*",
-        "wpackagist-plugin/wp-mail-smtp": "*",
-        "diva-dev/gravity-forms": "*",
-        "diva-dev/gravityformssurvey": "*",
-        "diva-dev/diva-staging-plugin": "*",
-        "diva-dev/modern-events-calendar": "*"
+        "advanced-custom-fields/advanced-custom-fields-pro": "*"
     },
     "autoload": {
         "psr-0": {

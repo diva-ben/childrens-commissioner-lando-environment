@@ -34,7 +34,7 @@ tooling:
   install:theme:
     service: appserver
     cmd:
-      - cd /app/wordpress/wp-content/themes && git clone git@github.com:diva-dev/wp-lpt.git
+      - cd /app/wordpress/wp-content/themes && git clone git@github.com:diva-dev/childrenscommissioner.git
   install:plugins:
     service: appserver
     cmd:
