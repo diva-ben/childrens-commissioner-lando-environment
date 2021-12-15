@@ -38,13 +38,13 @@ Install project with the following steps:
   ssh divastaging.co.uk
 
   # go to subdomain
-  cd lpt.divastaging.co.uk
+  cd childrenscommissioner.divastaging.co.uk/public_html
 
   # create database
   wp db export
 
   # scp the database
-  scp divastaging.co.uk:lpt.divastaging.co.uk/divastag_lpt-*.sql ./
+  scp divastaging.co.uk:childrenscommissioner.divastaging.co.uk/public_html/divastag_lpt-*.sql ./
 
   # import the database into lando db
   ## {project_root}/wordpress
@@ -52,15 +52,15 @@ Install project with the following steps:
 
   # Update the url
   ## {project_root}/wordpress
-  lando wp search-replace --all-tables --verbose 'lpt.divastaging.co.uk' 'lpt.test'
-  lando wp search-replace --all-tables --verbose 'http://lpt.test' 'https://lpt.test'
+  lando wp search-replace --all-tables --verbose 'childrenscommissioner.divastaging.co.uk' 'childrenscommissioner.test'
+  lando wp search-replace --all-tables --verbose 'http://childrenscommissioner.test' 'https://childrenscommissioner.test'
 ```
 
 **2. Rsync the media files from staging**
 ```bash
   # Rsync the uploads folder
   ## {project_root}/wordpress/wp-content/uploads
-  rsync -chavzP --stats divastaging.co.uk:~/lpt.divastaging.co.uk/wp-content/uploads/ ./
+  rsync -chavzP --stats divastaging.co.uk:~/childrenscommissioner.divastaging.co.uk/public_html/wp-content/uploads/ ./
 ```
 
 **3. Build node modules**

@@ -30,7 +30,7 @@ tooling:
   install:wordpress:
     service: appserver
     cmd:
-      - mkdir -p /app/wordpress && cd /app/wordpress && wp core download && wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database
+      - mkdir -p /app/wordpress && cd /app/wordpress && wp core download && wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database --dbprefix=cc2017v1_
   install:theme:
     service: appserver
     cmd:
