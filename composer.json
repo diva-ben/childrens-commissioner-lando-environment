@@ -22,12 +22,36 @@
             }
         },
         {
+            "type": "package",
+            "package": {
+                "name": "theseoframework/the-seo-framework-extension-manager",
+                "version": "2.5.2",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://dl.theseoframework.com/get/plugin/latest/"
+                }
+            }
+        },
+        {
             "type": "vcs",
             "url": "git@github.com:diva-dev/diva-staging-plugin.git"
         },
         {
             "type": "vcs",
             "url": "git@github.com:diva-dev/diva-skip-links.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:diva-dev/formidable-pro.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:diva-dev/formidable-mailchimp.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:diva-dev/formidable-export-view.git"
         }
     ],
     "require": {
@@ -46,7 +70,11 @@
         "wpackagist-plugin/slim-maintenance-mode": "*",
         "wpackagist-plugin/wp-extra-file-types": "*",
         "diva-dev/diva-staging-plugin": "*",
-        "diva-dev/diva-skip-links": "*"
+        "diva-dev/diva-skip-links": "*",
+        "diva-dev/formidable-pro": "*",
+        "diva-dev/formidable-mailchimp": "*",
+        "diva-dev/formidable-export-view": "*",
+        "theseoframework/the-seo-framework-extension-manager": "*"
     },
     "autoload": {
         "psr-0": {

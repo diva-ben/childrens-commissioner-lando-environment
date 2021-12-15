@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b43e1d7d193ef4a909da547417de55f",
+    "content-hash": "9dc5ce49d0a346718fa2aad58ca625e9",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -370,6 +370,76 @@
                 "issues": "https://github.com/diva-dev/diva-staging-plugin/issues"
             },
             "time": "2021-08-18T11:59:02+00:00"
+        },
+        {
+            "name": "diva-dev/formidable-mailchimp",
+            "version": "v2.06",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:diva-dev/formidable-mailchimp.git",
+                "reference": "4694d4b24a85899b891e45002c254579ac9b843c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/diva-dev/formidable-mailchimp/zipball/4694d4b24a85899b891e45002c254579ac9b843c",
+                "reference": "4694d4b24a85899b891e45002c254579ac9b843c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Original Plugin Author's Name",
+                    "homepage": "https://originalpluginurl.com"
+                }
+            ],
+            "homepage": "https://github.com/diva-dev/formidable-mailchimp",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/diva-dev/formidable-mailchimp/tree/v2.06",
+                "issues": "https://github.com/diva-dev/formidable-mailchimp/issues"
+            },
+            "time": "2021-12-15T10:30:30+00:00"
+        },
+        {
+            "name": "diva-dev/formidable-pro",
+            "version": "v5.0.14",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:diva-dev/formidable-pro.git",
+                "reference": "0e98d43032a594e3960e25fa2f79324154e2ba82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/diva-dev/formidable-pro/zipball/0e98d43032a594e3960e25fa2f79324154e2ba82",
+                "reference": "0e98d43032a594e3960e25fa2f79324154e2ba82",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Original Plugin Author's Name",
+                    "homepage": "https://originalpluginurl.com"
+                }
+            ],
+            "homepage": "https://github.com/diva-dev/formidable-pro",
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/diva-dev/formidable-pro/tree/v5.0.14",
+                "issues": "https://github.com/diva-dev/formidable-pro/issues"
+            },
+            "time": "2021-12-15T10:21:31+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1105,6 +1175,15 @@
                 }
             ],
             "time": "2021-05-27T12:26:48+00:00"
+        },
+        {
+            "name": "theseoframework/the-seo-framework-extension-manager",
+            "version": "2.5.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://dl.theseoframework.com/get/plugin/latest/"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "wpackagist-plugin/autodescription",
