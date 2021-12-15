@@ -1,4 +1,4 @@
-name: wp-lpt-environment
+name: cco-wp-environment
 recipe: wordpress
 config:
   php: '7.4'
@@ -58,10 +58,6 @@ tooling:
     service: node
   gulp:
     service: node
-  grunt:
-    service: node
-  bower:
-    service: node
   yarn:
     service: node
   php:
@@ -69,11 +65,11 @@ tooling:
 proxy:
   # Appserver_nginx or appserver for apache
   appserver:
-    - lpt.test
+    - childrenscommissioner.test
   mailhog:
-    - mail.lpt.lndo.site
+    - mail.cco.lndo.site
   pma:
-    - pma.lpt.lndo.site
+    - pma.cco.lndo.site
   node: # Optional: add this if you include the Sage specific config down below
     - localhost:3000
     - localhost:3001
