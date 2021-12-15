@@ -1,0 +1,6 @@
+wordpress
+wp-lpt
+vendor
+db-backups
+!db-backups/.gitkeep
+*.sql

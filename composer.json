@@ -1,0 +1,77 @@
+{
+    "name": "diva-dev/wp-lpt-environment",
+    "description": "WP LPT Environment",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*"
+            ]
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "advanced-custom-fields/advanced-custom-fields-pro",
+                "version": "5.9.5",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NDUwMTN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTExLTI1IDE3OjExOjA4"
+                }
+            }
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:diva-dev/gravity-forms.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:diva-dev/diva-staging-plugin.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:diva-dev/gravityformssurvey.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:diva-dev/modern-events-calendar.git"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php":"*",
+        "advanced-custom-fields/advanced-custom-fields-pro": "*",
+        "wp-media/wp-rocket": "^v3.9",
+        "wpackagist-plugin/adminimize": "^1.2",
+        "wpackagist-plugin/acf-gravityforms-add-on": "^1.2",
+        "wpackagist-plugin/all-in-one-wp-security-and-firewall": "*",
+        "wpackagist-plugin/breadcrumb-navxt": "*",
+        "wpackagist-plugin/classic-editor": "*",
+        "wpackagist-plugin/custom-post-type-permalinks": "*",
+        "wpackagist-plugin/gravity-forms-zero-spam": "*",
+        "wpackagist-plugin/post-expirator": "*",
+        "wpackagist-plugin/query-monitor": "*",
+        "wpackagist-plugin/redirection": "*",
+        "wpackagist-plugin/user-role-editor": "*",
+        "wpackagist-plugin/wordpress-seo": "*",
+        "wpackagist-plugin/wp-mail-smtp": "*",
+        "diva-dev/gravity-forms": "*",
+        "diva-dev/gravityformssurvey": "*",
+        "diva-dev/diva-staging-plugin": "*",
+        "diva-dev/modern-events-calendar": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
+        }
+    },
+    "extra": {
+        "installer-paths": {
+            "wordpress/wp-content/mu-plugins/{$name}/": [
+            ],
+            "wordpress/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ]
+        }
+    }
+}

@@ -1,0 +1,85 @@
+name: wp-lpt-environment
+recipe: wordpress
+config:
+  php: '7.4'
+  via: apache
+  webroot: wordpress
+  database: mysql
+  xdebug: false
+services:
+  node:
+    type: node:12
+    globals:
+      gulp-cli: latest
+    overrides:
+      ports:
+        - 3000:3000
+        - 3001:3001
+    build_as_root: # install ruby on node for capistrano https://docs.lando.dev/guides/using-compass-on-a-lando-node-service.html
+      - npm install -g bower
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
+tooling:
+  # Commands
+  install:wordpress:
+    service: appserver
+    cmd:
+      - mkdir -p /app/wordpress && cd /app/wordpress && wp core download && wp config create --dbname=wordpress --dbuser=wordpress --dbpass=wordpress --dbhost=database
+  install:theme:
+    service: appserver
+    cmd:
+      - cd /app/wordpress/wp-content/themes && git clone git@github.com:diva-dev/wp-lpt.git
+  install:plugins:
+    service: appserver
+    cmd:
+      - composer install && composer update
+  db:backup:
+    service: appserver
+    cmd: 
+      - echo "Backing up database..."
+      - cd /app/wordpress && wp db export --porcelain | xargs mv -t ../db-backups/
+      - echo "Database successfully backed up"
+  # TODO: Needs to check rsync - look into https://docs.lando.dev/config/ssh.html#customizing
+  # rsync:uploads:
+  #   service: appserver
+  #   cmd: 
+  #     - mkdir -p /app/wordpress/wp-content/uploads
+  #     - cd /app/wordpress/wp-content/uploads && rsync -azP divastaging.co.uk:lpt.divastaging.co.uk/wp-content/uploads/ ./
+  # Service commands
+  npm:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
+  grunt:
+    service: node
+  bower:
+    service: node
+  yarn:
+    service: node
+  php:
+    service: appserver
+proxy:
+  # Appserver_nginx or appserver for apache
+  appserver:
+    - lpt.test
+  mailhog:
+    - mail.lpt.lndo.site
+  pma:
+    - pma.lpt.lndo.site
+  node: # Optional: add this if you include the Sage specific config down below
+    - localhost:3000
+    - localhost:3001
+events:
+  # TODO: Look at exporting into root of project
+  pre-stop: 
+    - echo "Backing up database..."
+    - cd /app/wordpress && wp db export --porcelain | xargs mv -t ../db-backups/
+    - echo "Database successfully backed up"
