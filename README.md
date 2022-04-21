@@ -1,4 +1,4 @@
-# WP LPT Environment
+# CCO WP Environment
 Lando development environment for [WordPress/wp-lpt theme](https://github.com/diva-dev/wp-lpt).
 ## Requirements
 
@@ -83,6 +83,8 @@ Install project with the following steps:
   # Build assets
   ## {project_root}/wordpress/wp-content/themes/wp-lpt
   lando yarn build
+
+  # Build assets + minify
+  ## {project_root}/wordpress/wp-content/themes/wp-lpt
+  lando yarn build:production
 ```
-# childrens-commissioner-lando-environment
-# childrens-commissioner-lando-environment
